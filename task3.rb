@@ -1,4 +1,4 @@
-def array_to_hash(array)
+def to_histogram(array)
   result_hash = Hash.new(0)
   array.each { |element| result_hash[element] += 1 }
   result_hash
