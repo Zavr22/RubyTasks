@@ -5,7 +5,7 @@ def to_histogram(array)
 end
 
 arr = [1, 2, 3, 1, 'ok', 3, 3, 'ok', 3, 'ok']
-hash_with_count = array_to_hash(arr)
+hash_with_count = to_histogram(arr)
 puts "hash with counted elements  : #{hash_with_count.to_s}"
 
 
