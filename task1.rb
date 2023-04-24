@@ -21,7 +21,7 @@ def calculate_next_dates(date, unit, duration, n)
   next_date_hash = {
     'day' => ->(date, duration) { date + duration },
     'week' => ->(date, duration) { date + (7 * duration) },
-    'month' => ->(date, duration) { date.next_month + duration*0},
+    'month' => ->(date, duration) { date.next_month + (duration*0)},
     'year' => ->(date, duration) { date + (duration* 365)}
   }
     if next_date_hash.key?(unit)
